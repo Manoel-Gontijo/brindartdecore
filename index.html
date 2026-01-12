@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brindart Decore | Em breve</title>
+  <link rel="icon" type="image/png" href="img/logotopo.png">
+  <link rel="apple-touch-icon" href="img/logotopo.png">
+
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Ícones (WhatsApp / Instagram) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="brand">
+        <img class="logo" src="img/logo.png" alt="Brindart Decore">
+      </div>
+
+      <h1>Uma nova Brindart está sendo construída ✨</h1>
+      <p class="subtitle">
+        Estamos preparando novidades e um novo site cheio de capricho.
+        Enquanto isso, fale com a gente ou acompanhe pelas redes!
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-social" href="https://wa.me/5537988259454" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+
+        <a class="btn btn-social" href="https://instagram.com/brindartdecore" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
+      </div>
+
+      <div class="footer">
+        <span class="pill">🚀 Em breve novidades</span>
+        <small>© <span id="year"></span> Brindart Decore</small>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
