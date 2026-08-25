@@ -4,11 +4,11 @@ window.BRINDART_STATIC = {
     "nome": "Brindart Decore",
     "subtitulo": "Loja Criativa",
     "whatsapp": "5537988259454",
-    "instagram": "https://instagram.com/SEU_USUARIO",
-    "facebook": "https://facebook.com/SUA_PAGINA",
+    "instagram": "https://instagram.com/brindartdecore",
+    "facebook": "",
     "email": "",
     "cidade": "Divinópolis - MG",
-    "dominio": "https://seudominio.com.br"
+    "dominio": "https://brindartdecore.com.br"
   },
   "cookies_config": {
     "ativo": 1,
@@ -132,7 +132,7 @@ window.BRINDART_STATIC = {
       "id": 1,
       "ativo": 1,
       "anunciante": "Empresa Parceira 1",
-      "imagem": "assets/img/publicidade/publicidade-meio.png",
+      "imagem": "assets/img/publicidade/publicidade-meio-1787574751209.png",
       "link": "https://www.exemplo.com.br",
       "posicao": "meio",
       "nova_aba": 1
@@ -141,7 +141,7 @@ window.BRINDART_STATIC = {
       "id": 2,
       "ativo": 1,
       "anunciante": "Empresa Parceira 2",
-      "imagem": "assets/img/publicidade/publicidade-final.png",
+      "imagem": "assets/img/publicidade/publicidade-final-1787574767542.png",
       "link": "https://www.exemplo.com.br",
       "posicao": "final",
       "nova_aba": 1
@@ -150,11 +150,11 @@ window.BRINDART_STATIC = {
   "produtos": [
     {
       "id": 1,
-      "referencia": "LAS-002",
-      "nome": "Supla",
-      "slug": "supla",
-      "descricao": "Supla em MDF de 3mm \n35cm de diâmetro",
-      "preco": 6,
+      "referencia": "REL-001",
+      "nome": "Jogo da Velha em MDF – Corte a Laser",
+      "slug": "jogo-da-velha-em-mdf-corte-a-laser",
+      "descricao": "Jogo da Velha em MDF produzido com corte a laser, com peças X e O. Brinquedo educativo, resistente e divertido para crianças e toda a família.",
+      "preco": 3,
       "preco_promocional": null,
       "quantidade_config": null,
       "tipo_precificacao": "fixo",
@@ -163,10 +163,44 @@ window.BRINDART_STATIC = {
       "desconto_percentual": 10,
       "destaque_ativo": 0,
       "destaque_texto": "DESTAQUE",
-      "imagem": "assets/img/produtos/LAS-002-01.png",
-      "galeria": "[\"assets/img/produtos/LAS-002-01.png\",\"assets/img/produtos/LAS-002-02.png\"]",
+      "imagem": "assets/img/produtos/REL-001-01.png",
+      "galeria": "[\"assets/img/produtos/REL-001-01.png\"]",
       "categoria_id": 3,
       "estoque": 50,
+      "avaliacao": 5,
+      "vendas": 0,
+      "mais_visitado": 0,
+      "destaque_semana": 0,
+      "destaque": 0,
+      "novidade": 0,
+      "promocao": 0,
+      "selo": "",
+      "ativo": 1,
+      "seo_titulo": "Jogo da Velha em MDF Corte a Laser | BrindArt",
+      "seo_descricao": "Jogo da Velha em MDF produzido com corte a laser, com peças X e O. Brinquedo educativo, resistente e divertido para crianças e toda a família.",
+      "permite_personalizacao": 0,
+      "titulo_variacao": "Escolha uma opção",
+      "variacoes": []
+    },
+    {
+      "id": 2,
+      "referencia": "REL-002",
+      "nome": "Suplá de MDF 35 cm para Mesa Posta | BrindArt",
+      "slug": "supla-de-mdf-35-cm-para-mesa-posta-brindart",
+      "descricao": "Suplá redondo em MDF 3 mm com 35 cm, produzido em corte a laser. Ideal para mesa posta, decoração, artesanato, pintura e personalização.",
+      "preco": 29.9,
+      "preco_promocional": null,
+      "quantidade_config": null,
+      "tipo_precificacao": "fixo",
+      "calculadora_config": null,
+      "desconto_ativo": 1,
+      "desconto_percentual": 10,
+      "destaque_ativo": 0,
+      "destaque_texto": "DESTAQUE",
+      "imagem": "assets/img/produtos/REL-002-01.png",
+      "galeria": "[\"assets/img/produtos/REL-002-01.png\",\"assets/img/produtos/REL-002-02.png\"]",
+      "categoria_id": 3,
+      "estoque": 5,
       "avaliacao": 5,
       "vendas": 0,
       "mais_visitado": 0,
@@ -176,8 +210,172 @@ window.BRINDART_STATIC = {
       "promocao": 0,
       "selo": "",
       "ativo": 1,
-      "seo_titulo": "Supla de MDF Personalizado para Mesa Posta | BrindArt",
-      "seo_descricao": "Supla de MDF cortado a laser, ideal para mesa posta, festas e eventos. Escolha o modelo e personalize seu pedido com a BrindArt.",
+      "seo_titulo": "Suplá de MDF 35 cm para Mesa Posta | BrindArt",
+      "seo_descricao": "Suplá redondo em MDF 3 mm com 35 cm, produzido em corte a laser. Ideal para mesa posta, decoração, artesanato, pintura e personalização.",
+      "permite_personalizacao": 0,
+      "titulo_variacao": "Escolha uma opção",
+      "variacoes": []
+    },
+    {
+      "id": 3,
+      "referencia": "LAS-001",
+      "nome": "Caixa de MDF 3 mm com Tampa – Corte a Laser",
+      "slug": "caixa-de-mdf-3-mm-com-tampa-corte-a-laser",
+      "descricao": "Caixa produzida em MDF cru de 3 mm com corte a laser e tampa tipo caixa de sapato. Ideal para artesanato, pintura, personalização, lembrancinhas, presentes, organização e montagem de kits. Pode ser utilizada ao natural ou receber pintura, tecido, adesivos, decoupage e outras técnicas artesanais.",
+      "preco": 14.99,
+      "preco_promocional": null,
+      "quantidade_config": null,
+      "tipo_precificacao": "fixo",
+      "calculadora_config": null,
+      "desconto_ativo": 1,
+      "desconto_percentual": 5,
+      "destaque_ativo": 1,
+      "destaque_texto": "DESTAQUE",
+      "imagem": "assets/img/produtos/LAS-001-01.png",
+      "galeria": "[\"assets/img/produtos/LAS-001-01.png\",\"assets/img/produtos/LAS-001-02.png\",\"assets/img/produtos/LAS-001-03.png\"]",
+      "categoria_id": 3,
+      "estoque": 5,
+      "avaliacao": 5,
+      "vendas": 0,
+      "mais_visitado": 0,
+      "destaque_semana": 0,
+      "destaque": 0,
+      "novidade": 0,
+      "promocao": 0,
+      "selo": "",
+      "ativo": 1,
+      "seo_titulo": "Caixa de MDF 3 mm com Tampa | Corte a Laser | BrindArt",
+      "seo_descricao": "Caixa de MDF 3 mm com tampa, produzida em corte a laser. Ideal para artesanato, presentes, lembrancinhas, organização, pintura e personalização.",
+      "permite_personalizacao": 0,
+      "titulo_variacao": "Escolha uma opção",
+      "variacoes": []
+    },
+    {
+      "id": 4,
+      "referencia": "LAS-002",
+      "nome": "Cake Board Redondo em MDF Branco – Vários Tamanhos",
+      "slug": "cake-board-redondo-em-mdf-branco-varios-tamanhos",
+      "descricao": "Cake board redondo produzido em MDF branco, com corte a laser preciso e acabamento uniforme. Ideal para servir como base para bolos, bolos decorados, festas, confeitaria e trabalhos personalizados. Disponível em diversos diâmetros para atender diferentes tamanhos de bolos.",
+      "preco": 0,
+      "preco_promocional": null,
+      "quantidade_config": null,
+      "tipo_precificacao": "calculadora",
+      "calculadora_config": {
+        "ativo": 1,
+        "tipo": "area_plana",
+        "modo_preco_m2": "unico",
+        "valor_m2": 60,
+        "com_tampa": 0,
+        "fator_perda": 1.08,
+        "custo_fixo": 0,
+        "preco_minimo": 1,
+        "modelos_padrao": [
+          {
+            "nome": "Cakeboard 10 x 10 cm",
+            "largura": 10,
+            "altura": 10
+          },
+          {
+            "nome": "Cakeboard 15 x 15 cm",
+            "largura": 15,
+            "altura": 15
+          },
+          {
+            "nome": "Cakeboard 18 x 18 cm",
+            "largura": 18,
+            "altura": 18
+          },
+          {
+            "nome": "Cakeboard 20 x 20 cm",
+            "largura": 20,
+            "altura": 20
+          },
+          {
+            "nome": "Cakeboard 25 x 25 cm",
+            "largura": 25,
+            "altura": 25
+          },
+          {
+            "nome": "Cakeboard 30 x 30 cm",
+            "largura": 30,
+            "altura": 30
+          },
+          {
+            "nome": "Cakeboard 35 x 35 cm",
+            "largura": 35,
+            "altura": 35
+          },
+          {
+            "nome": "Cakeboard 40 x 40 cm",
+            "largura": 40,
+            "altura": 40
+          }
+        ],
+        "faixas_m2": [],
+        "materiais": [
+          {
+            "nome": "MDF Cru",
+            "fator": 1,
+            "espessuras": [
+              {
+                "nome": "3 mm",
+                "fator": 1
+              },
+              {
+                "nome": "6 mm",
+                "fator": 1.25
+              }
+            ]
+          },
+          {
+            "nome": "MDF Branco",
+            "fator": 1.2,
+            "espessuras": [
+              {
+                "nome": "3 mm",
+                "fator": 1
+              },
+              {
+                "nome": "6 mm",
+                "fator": 1.25
+              }
+            ]
+          },
+          {
+            "nome": "Acrílico",
+            "fator": 1.8,
+            "espessuras": [
+              {
+                "nome": "2 mm",
+                "fator": 1
+              },
+              {
+                "nome": "3 mm",
+                "fator": 1.2
+              }
+            ]
+          }
+        ]
+      },
+      "desconto_ativo": 0,
+      "desconto_percentual": 10,
+      "destaque_ativo": 0,
+      "destaque_texto": "DESTAQUE",
+      "imagem": "assets/img/produtos/LAS-002-01.png",
+      "galeria": "[\"assets/img/produtos/LAS-002-01.png\",\"assets/img/produtos/LAS-002-02.png\",\"assets/img/produtos/LAS-002-03.png\"]",
+      "categoria_id": 3,
+      "estoque": 50,
+      "avaliacao": 5,
+      "vendas": 0,
+      "mais_visitado": 0,
+      "destaque_semana": 0,
+      "destaque": 0,
+      "novidade": 0,
+      "promocao": 0,
+      "selo": "",
+      "ativo": 1,
+      "seo_titulo": "Cake Board MDF Branco para Bolo | Vários Tamanhos | BrindArt",
+      "seo_descricao": "Cake board redondo em MDF branco, disponível em vários tamanhos. Base resistente para bolos, confeitaria, festas e decoração. Corte a laser BrindArt.",
       "permite_personalizacao": 0,
       "titulo_variacao": "Escolha uma opção",
       "variacoes": []
