@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacidade e Cookies | Brindart Decore</title>
+<meta name="description" content="Informações sobre privacidade, cookies e armazenamento local utilizados no site Brindart Decore.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=41060">
+  <link rel="stylesheet" href="assets/css/mobile-fix-v493.css?v=4930">
+  <link rel="stylesheet" href="assets/css/mobile-fix-v494.css?v=4940">
+<link rel="stylesheet" href="assets/css/layout-fix-v495.css?v=4950">
+<link rel="stylesheet" href="assets/css/mobile-header-v496.css?v=4960">
+<link rel="stylesheet" href="assets/css/card-labels-v497.css?v=4970">
+<link rel="stylesheet" href="assets/css/catalog-layout-v498.css?v=4980">
+</head>
+<body>
+<header class="bd-header">
+  <div class="container py-3 d-flex justify-content-between align-items-center">
+    <a href="index.html" class="text-decoration-none"><div class="logo-main">Brindart</div><div class="logo-sub">Loja Criativa</div></a>
+    <a href="index.html" class="btn btn-outline-dark rounded-pill">Voltar à loja</a>
+  </div>
+</header>
+<main class="container py-5" style="max-width:900px">
+  <span class="bd-badge">Informações</span>
+  <h1 class="section-title mt-2">Privacidade e Cookies</h1>
+  <p class="lead text-muted">Esta página explica, de forma simples, como o site utiliza informações armazenadas no navegador.</p>
+
+  <div class="bg-white border rounded-4 p-4 p-md-5 mt-4">
+    <h2 class="h4">Carrinho e favoritos</h2>
+    <p>O site utiliza armazenamento local do navegador para manter itens do carrinho, produtos favoritos e algumas preferências. Essas informações ficam no próprio navegador do visitante e podem ser removidas ao limpar os dados do site.</p>
+
+    <h2 class="h4 mt-4">Preferência de cookies</h2>
+    <p>Quando o aviso de cookies é exibido, a escolha feita pelo visitante é guardada no navegador para evitar que o aviso seja apresentado repetidamente.</p>
+
+    <h2 class="h4 mt-4">Pedidos pelo WhatsApp</h2>
+    <p>Ao optar por finalizar um pedido pelo WhatsApp, os dados e detalhes preenchidos são usados para montar a mensagem que será enviada pelo próprio visitante ao atendimento da loja.</p>
+
+    <h2 class="h4 mt-4">Serviços adicionais</h2>
+    <p>Se futuramente forem adicionadas ferramentas de métricas, publicidade ou outros serviços que utilizem tecnologias opcionais, esta página e o mecanismo de consentimento poderão ser atualizados.</p>
+
+    <h2 class="h4 mt-4">Contato</h2>
+    <p>Para dúvidas sobre estas informações, utilize os canais de atendimento apresentados no site.</p>
+
+    <p class="small text-muted mt-5 mb-0">Este texto deve ser revisado e adaptado aos serviços efetivamente utilizados pela loja antes da publicação definitiva.</p>
+  </div>
+</main>
+<script src="assets/js/static-data-v2.js?v=4740"></script>
+<script src="assets/js/marketing-v45.js?v=4530"></script>
+
+<script id="brindart-marketing-fallback-v453">
+(function(){
+  function flag(nome){
+    try{return new URLSearchParams(location.search).get(nome)==='1'}catch(e){return false}
+  }
+  function cfg(){ return window.BRINDART_STATIC || {}; }
+  function safeGet(storage,key){ try{return storage.getItem(key)}catch(e){return null} }
+  function safeSet(storage,key,val){ try{storage.setItem(key,val)}catch(e){} }
+
+  function pathUrl(raw){
+    raw=String(raw||'').trim();
+    if(!raw)return '#';
+    if(/^https?:\/\//i.test(raw))return raw;
+    if(location.hostname==='127.0.0.1' && location.pathname.startsWith('/publicar/')){
+      return raw.startsWith('/') ? '/publicar'+raw : raw;
+    }
+    if(location.protocol==='file:')return raw.replace(/^\//,'');
+    return raw;
+  }
+
+  function criarAviso(force){
+    if(document.querySelector('.cookie-banner-v45')) return;
+    var c=cfg().cookies_config||{};
+    if(!force && Number(c.ativo||0)!==1)return;
+    if(!force && safeGet(localStorage,'brindart_cookie_consent_v453'))return;
+
+    var box=document.createElement('div');
+    box.className='cookie-banner-v45';
+    box.innerHTML=
+      '<div class="cookie-inner-v45">'+
+        '<div class="cookie-icon-v45"><i class="bi bi-shield-check"></i></div>'+
+        '<div class="cookie-copy-v45">'+
+          '<strong>'+(c.titulo||'Sua privacidade é importante')+'</strong>'+
+          '<p>'+(c.texto||'Usamos armazenamento local essencial para melhorar sua experiência.')+'</p>'+
+          (c.link_politica?'<a href="'+pathUrl(c.link_politica)+'">Política de Privacidade e Cookies</a>':'')+
+        '</div>'+
+        '<div class="cookie-actions-v45">'+
+          '<button id="cookieNecV453" type="button" class="btn btn-outline-secondary btn-sm">'+(c.texto_botao_necessarios||'Somente necessários')+'</button>'+
+          '<button id="cookieAceV453" type="button" class="btn btn-brand-cookie-v45 btn-sm">'+(c.texto_botao_aceitar||'Aceitar')+'</button>'+
+        '</div>'+
+      '</div>';
+
+    document.body.appendChild(box);
+
+    function fechar(escolha){
+      safeSet(localStorage,'brindart_cookie_consent_v453',escolha);
+      box.remove();
+      setTimeout(function(){ criarPopup(false); },150);
+    }
+    document.getElementById('cookieNecV453').onclick=function(){fechar('necessarios')};
+    document.getElementById('cookieAceV453').onclick=function(){fechar('aceitos')};
+  }
+
+  function podePopup(c){
+    var freq=String(c.frequencia||'sessao');
+    if(freq==='sempre')return true;
+    if(freq==='uma_vez')return !safeGet(localStorage,'brindart_popup_once_v453');
+    if(freq==='diario'){
+      return safeGet(localStorage,'brindart_popup_day_v453')!==new Date().toISOString().slice(0,10);
+    }
+    return !safeGet(sessionStorage,'brindart_popup_session_v453');
+  }
+
+  function marcaPopup(c){
+    var freq=String(c.frequencia||'sessao');
+    if(freq==='uma_vez')safeSet(localStorage,'brindart_popup_once_v453','1');
+    else if(freq==='diario')safeSet(localStorage,'brindart_popup_day_v453',new Date().toISOString().slice(0,10));
+    else if(freq==='sessao')safeSet(sessionStorage,'brindart_popup_session_v453','1');
+  }
+
+  function criarPopup(force){
+    if(document.querySelector('.promo-popup-overlay-v45'))return;
+    var p=cfg().popup_promocional||{};
+    if(!force && Number(p.ativo||0)!==1)return;
+
+    var pathname=(location.pathname||'').toLowerCase();
+    var home=pathname==='/'||pathname.endsWith('/index.html')||pathname.endsWith('/publicar/');
+    if(!force && String(p.paginas||'home')==='home'&&!home)return;
+    if(!force&&!podePopup(p))return;
+
+    var overlay=document.createElement('div');
+    overlay.className='promo-popup-overlay-v45';
+    overlay.setAttribute('data-fallback-v453','1');
+
+    overlay.innerHTML=
+      '<div class="promo-popup-v45">'+
+        '<button id="fecharPopupV453" type="button" class="promo-close-v45" aria-label="Fechar"><i class="bi bi-x-lg"></i></button>'+
+        (p.imagem?'<a class="promo-image-link-v45" href="'+pathUrl(p.link||'#')+'"><img src="'+pathUrl(p.imagem)+'" alt="Promoção"></a>':'')+
+        '<div class="promo-content-v45">'+
+          '<span class="promo-flash-badge-v45"><i class="bi bi-lightning-charge-fill"></i> PROMOÇÃO RELÂMPAGO</span>'+
+          '<h2>'+(p.titulo||'OFERTA RELÂMPAGO')+'</h2>'+
+          '<p>'+(p.subtitulo||'Aproveite nossas condições especiais!')+'</p>'+
+          (p.link?'<a class="promo-action-v45" href="'+pathUrl(p.link)+'">'+(p.texto_botao||'Ver promoção')+' <i class="bi bi-arrow-right"></i></a>':'')+
+        '</div>'+
+      '</div>';
+
+    document.body.appendChild(overlay);
+
+    function fechar(){
+      if(!force)marcaPopup(p);
+      overlay.remove();
+    }
+    document.getElementById('fecharPopupV453').onclick=fechar;
+    overlay.onclick=function(e){if(e.target===overlay)fechar()};
+  }
+
+  function diagnostico(texto){
+    var d=document.createElement('div');
+    d.style.cssText='position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:100001;background:#111;color:#fff;padding:9px 15px;border-radius:999px;font:700 12px Arial;box-shadow:0 5px 20px rgba(0,0,0,.3)';
+    d.textContent=texto;
+    document.body.appendChild(d);
+    setTimeout(function(){d.remove()},5000);
+  }
+
+  function iniciar(){
+    var testePopup=flag('teste-popup');
+    var testeCookies=flag('teste-cookies');
+
+    if(testePopup){
+      diagnostico('V4.5.3 ATIVA — popup forçado diretamente pelo index.html');
+      setTimeout(function(){criarPopup(true)},100);
+      return;
+    }
+    if(testeCookies){
+      diagnostico('V4.5.3 ATIVA — cookies forçados diretamente pelo index.html');
+      setTimeout(function(){criarAviso(true)},100);
+      return;
+    }
+
+    var c=cfg().cookies_config||{};
+    var precisaCookies=Number(c.ativo||0)===1&&!safeGet(localStorage,'brindart_cookie_consent_v453');
+    if(precisaCookies){
+      criarAviso(false);
+    }else{
+      var p=cfg().popup_promocional||{};
+      setTimeout(function(){criarPopup(false)},Math.max(0,Number(p.atraso_segundos||0))*1000);
+    }
+  }
+
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',iniciar);
+  else iniciar();
+})();
+</script>
+
+<script src="assets/js/institucional-v46.js?v=4600"></script>\n<script src="assets/js/mobile-v47.js?v=4910"></script>
+<script src="assets/js/versao-v480.js?v=4800"></script>
+<script src="assets/js/version-v491.js?v=4910"></script>
+<script src="assets/js/version-v493.js?v=4930"></script>
+<script src="assets/js/mobile-topbar-v494.js?v=4940"></script>
+<script src="assets/js/topbar-remove-v495.js?v=4950"></script>
+</body>
+</html>

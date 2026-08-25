@@ -1,0 +1,49 @@
+/* V4.10.3 - três ofertas ocupando todo o espaço abaixo do carrossel */
+@media (min-width: 992px) {
+  .weekly-deals-side-v4101 {
+    min-height: 294px !important;
+    padding: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .weekly-deals-side-v4101 .weekly-deals-head-v499 {
+    flex: 0 0 auto !important;
+    margin-bottom: 16px !important;
+  }
+  .weekly-deals-side-v4101 .weekly-deals-grid-v499 {
+    flex: 1 1 auto !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    grid-auto-rows: 1fr !important;
+    gap: 14px !important;
+    overflow: visible !important;
+  }
+  .weekly-deals-side-v4101 .weekly-deal-card-v499 {
+    height: 100% !important;
+    min-height: 190px !important;
+    grid-template-columns: minmax(118px, 43%) minmax(0, 57%) !important;
+    gap: 14px !important;
+    padding: 12px !important;
+    align-items: stretch !important;
+  }
+  .weekly-deals-side-v4101 .weekly-deal-image-v499 {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 162px !important;
+    aspect-ratio: auto !important;
+  }
+  .weekly-deals-side-v4101 .weekly-deal-info-v499 {
+    justify-content: center !important;
+  }
+  .weekly-deals-side-v4101 .weekly-deal-info-v499 small { font-size: 9px !important; }
+  .weekly-deals-side-v4101 .weekly-deal-info-v499 strong {
+    margin: 5px 0 !important;
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+  .weekly-deals-side-v4101 .weekly-deal-info-v499 del { font-size: 12px !important; }
+  .weekly-deals-side-v4101 .weekly-deal-info-v499 b { font-size: 19px !important; }
+  .weekly-deals-side-v4101 .weekly-deal-cta-v499 {
+    margin-top: 8px !important;
+    font-size: 11px !important;
+  }
+}

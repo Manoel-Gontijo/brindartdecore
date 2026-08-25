@@ -1,0 +1,121 @@
+/* V34.3 - Home limpa, sem carrossel duplicado */
+#heroCarouselV339,
+#heroCarouselV335,
+#homeMainCarouselStableV3311,
+#carouselHomeBrindart,
+#homeCarousel,
+#mainCarousel,
+.carousel-fix-v339,
+.carousel-stable-v3311,
+.promo-mini-grid,
+[class*="promo-semana"],
+[class*="promocao-semana"],
+[class*="promo-week"] {
+  display: none !important;
+}
+
+#brindartCarouselNovo #brindartCarouselV34,
+#brindartCarouselNovo .carousel {
+  display: block !important;
+}
+
+.carousel-top-only-v342 {
+  margin-top: 1.4rem !important;
+  margin-bottom: 1.7rem !important;
+}
+
+.home-section-v343 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-head-v343 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-head-v343 h2 {
+  color: #4b2e28;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 900;
+  margin: 0;
+}
+
+.section-head-v343 a {
+  color: #e35f7a;
+  border: 1px solid #e35f7a;
+  border-radius: 999px;
+  padding: .55rem 1.2rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.home-products-grid-v343 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-product-card-v343 {
+  background: #fff;
+  border: 1px solid #f1d8da;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: #4b2e28;
+  box-shadow: 0 8px 22px rgba(185,75,99,.06);
+  display: block;
+}
+
+.home-product-card-v343 img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background: #fff4f0;
+  display: block;
+}
+
+.home-product-card-v343 .info {
+  padding: .85rem;
+}
+
+.home-product-card-v343 strong {
+  display: block;
+  font-size: .98rem;
+  line-height: 1.2;
+  min-height: 2.35em;
+}
+
+.home-product-card-v343 span {
+  display: block;
+  color: #e35f7a;
+  font-weight: 900;
+  margin-top: .45rem;
+}
+
+.home-product-card-v343 small {
+  display: block;
+  color: #8a6464;
+  margin-top: .25rem;
+}
+
+@media(max-width: 992px) {
+  .home-products-grid-v343 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media(max-width: 576px) {
+  .home-products-grid-v343 {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head-v343 {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

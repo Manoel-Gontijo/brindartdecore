@@ -1,0 +1,65 @@
+/* V4.10.0 - acabamento do carrossel, ofertas e selos */
+.weekly-deals-full-v4100{
+  width:100%!important;
+  margin-top:24px!important;
+}
+.weekly-deals-side-v4101{
+  width:100%!important;
+  margin-top:18px!important;
+}
+
+/* Indicadores pequenos no desktop, iguais ao acabamento do mobile. */
+#brindartCarouselV34 .carousel-indicators{
+  gap:6px!important;
+  margin-bottom:8px!important;
+  align-items:center!important;
+}
+#brindartCarouselV34 .carousel-indicators [data-bs-target],
+#brindartCarouselV34 .carousel-indicators button{
+  width:6px!important;
+  height:6px!important;
+  min-width:6px!important;
+  min-height:6px!important;
+  flex:0 0 6px!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:50%!important;
+  background:#e35f7a!important;
+  opacity:.45!important;
+  box-sizing:border-box!important;
+}
+#brindartCarouselV34 .carousel-indicators .active{
+  width:16px!important;
+  min-width:16px!important;
+  flex-basis:16px!important;
+  border-radius:999px!important;
+  opacity:1!important;
+}
+
+/* Garante texto visível nas cápsulas do desktop. */
+.product-card .product-selo-v34,
+.product-card .product-selo-lista-v34,
+.product-card .discount-badge-v38,
+.home-product-card-v344 .product-selo-v34,
+.home-product-card-v344 .discount-badge-v38{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+  font-size:10px!important;
+  line-height:1.15!important;
+  font-weight:900!important;
+  text-indent:0!important;
+  letter-spacing:0!important;
+  opacity:1!important;
+  min-width:0!important;
+  width:auto!important;
+  height:auto!important;
+  min-height:0!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+
+@media(max-width:767.98px){
+  .weekly-deals-full-v4100{margin-top:14px!important}
+}

@@ -1,0 +1,28 @@
+#brindartCarouselNovo{width:100%;margin:0 0 1.4rem 0}
+#brindartCarouselV34{border-radius:1.7rem;overflow:hidden;box-shadow:0 18px 45px rgba(185,75,99,.09)}
+.brindart-slide-v34{position:relative;height:410px;background:#fbe2e7}
+.brindart-slide-v34 img{width:100%;height:410px;display:block;object-fit:cover}
+.brindart-slide-content-v34{position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:70%;max-width:900px;background:linear-gradient(90deg,rgba(0,0,0,.42),rgba(0,0,0,.16));padding:3.5rem 2rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;z-index:2}
+.brindart-slide-content-v34 h2{color:#fff;font-size:3.2rem;line-height:1;font-weight:900;margin-bottom:1rem;text-align:center}
+.brindart-slide-content-v34 p{color:#fff;font-size:1.08rem;margin-bottom:1.4rem;text-align:center}
+#brindartCarouselV34 .carousel-control-prev,#brindartCarouselV34 .carousel-control-next{width:8%;min-width:64px;z-index:3}
+#brindartCarouselV34 .carousel-control-prev-icon,#brindartCarouselV34 .carousel-control-next-icon{width:54px;height:54px;background-color:#e35f7a;background-size:45%;border-radius:50%}
+#brindartCarouselV34 .carousel-indicators button{width:12px;height:12px;border-radius:50%;background-color:#e35f7a}
+.carrossel-admin-card-v34{display:grid;grid-template-columns:150px 1fr auto;gap:1rem;align-items:center;border:1px solid #f1d8da;border-radius:1.2rem;padding:1rem;background:#fff;margin-bottom:.85rem}
+.carrossel-admin-card-v34 img{width:150px;height:75px;object-fit:cover;border-radius:.8rem;background:#fff4f0}
+@media(max-width:768px){.brindart-slide-v34,.brindart-slide-v34 img{height:300px}.brindart-slide-content-v34{width:82%;padding:2rem 1rem}.brindart-slide-content-v34 h2{font-size:2rem}.carrossel-admin-card-v34{grid-template-columns:1fr}.carrossel-admin-card-v34 img{width:100%;height:160px}}
+
+
+/* V34.1 - bloqueia carrossel antigo */
+#heroCarouselV339,
+#heroCarouselV335,
+#homeMainCarouselStableV3311,
+.carousel-fix-v339,
+.carousel-stable-v3311 {
+  display: none !important;
+}
+
+#brindartCarouselNovo .carousel,
+#brindartCarouselV34 {
+  display: block !important;
+}

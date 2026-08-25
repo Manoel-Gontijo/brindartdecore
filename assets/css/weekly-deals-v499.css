@@ -1,0 +1,28 @@
+/* V4.9.9 - Super Condições da Semana */
+.weekly-deals-v499{
+  margin-top:18px;
+  padding:18px;
+  border:1px solid #f1ccd4;
+  border-radius:20px;
+  background:linear-gradient(135deg,#fff,#fff3f5);
+  box-shadow:0 12px 30px rgba(185,75,99,.08);
+}
+.weekly-deals-head-v499{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:14px}
+.weekly-deals-kicker-v499{display:block;color:#e35f7a;font-size:10px;font-weight:900;letter-spacing:.12em}
+.weekly-deals-head-v499 h2{margin:2px 0 0;color:#4b2e28;font-size:24px;line-height:1;font-weight:900}
+.weekly-deals-head-v499>a{color:#e35f7a;font-size:13px;font-weight:800;text-decoration:none;white-space:nowrap}
+.weekly-deals-grid-v499{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.weekly-deal-card-v499{min-width:0;display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;padding:9px;border:1px solid #f1d8da;border-radius:15px;background:#fff;color:#4b2e28;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease}
+.weekly-deal-card-v499:hover{color:#4b2e28;transform:translateY(-2px);box-shadow:0 10px 22px rgba(185,75,99,.12)}
+.weekly-deal-image-v499{position:relative;min-width:0;aspect-ratio:1/1;border-radius:11px;overflow:hidden;background:#fff7f8}
+.weekly-deal-image-v499 img{width:100%;height:100%;display:block;object-fit:contain}
+.weekly-deal-image-v499>span{position:absolute;z-index:2;top:5px;left:5px;padding:3px 6px;border-radius:999px;background:#e35f7a;color:#fff;font-size:8px;font-weight:900}
+.weekly-deal-info-v499{min-width:0;display:flex;flex-direction:column;justify-content:center}
+.weekly-deal-info-v499 small{color:#a16b75;font-size:8px;font-weight:800}
+.weekly-deal-info-v499 strong{display:-webkit-box;margin:2px 0;font-size:12px;line-height:1.15;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.weekly-deal-info-v499 del{color:#9d8a8d;font-size:10px}
+.weekly-deal-info-v499 b{color:#e35f7a;font-size:15px;line-height:1.1}
+.weekly-deal-cta-v499{margin-top:4px;color:#b43f5a;font-size:9px;font-weight:900}
+.weekly-deals-empty-v499{grid-column:1/-1;padding:20px;text-align:center;color:#815c62;background:#fff;border-radius:14px}
+@media(max-width:991.98px){.weekly-deals-grid-v499{grid-template-columns:repeat(3,minmax(220px,1fr));overflow-x:auto;padding-bottom:5px;scroll-snap-type:x mandatory}.weekly-deal-card-v499{scroll-snap-align:start}}
+@media(max-width:767.98px){.weekly-deals-v499{margin-top:12px;padding:14px;border-radius:17px}.weekly-deals-head-v499{align-items:center}.weekly-deals-head-v499 h2{font-size:19px}.weekly-deals-grid-v499{grid-template-columns:repeat(3,250px)}.weekly-deal-card-v499{grid-template-columns:86px minmax(0,1fr)}}

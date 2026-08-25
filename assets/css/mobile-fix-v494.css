@@ -1,0 +1,48 @@
+
+/* BRINDART V4.9.4 — TOPBAR REMOVIDA NO MOBILE */
+
+@media screen and (max-width: 767.98px) {
+
+  /* Remove de verdade toda a barra superior */
+  html body .bd-topbar,
+  body > .bd-topbar,
+  .bd-topbar{
+    display:none !important;
+    visibility:hidden !important;
+    opacity:0 !important;
+    height:0 !important;
+    min-height:0 !important;
+    max-height:0 !important;
+    margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
+    overflow:hidden !important;
+    position:absolute !important;
+    pointer-events:none !important;
+  }
+
+  /* Garante que o cabeçalho ocupe o topo imediatamente */
+  html body .bd-header{
+    margin-top:0 !important;
+    padding-top:0 !important;
+    top:0 !important;
+  }
+
+  html body .bd-header .container{
+    margin-top:0 !important;
+    padding-top:10px !important;
+  }
+
+  /* Remove qualquer espaço reservado pela topbar */
+  html body{
+    margin-top:0 !important;
+    padding-top:0 !important;
+  }
+}
+
+/* Desktop e tablet maior continuam com a topbar normal */
+@media screen and (min-width: 768px) {
+  .bd-topbar{
+    display:block;
+  }
+}

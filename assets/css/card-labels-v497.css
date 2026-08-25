@@ -1,0 +1,38 @@
+/* V4.9.7 - etiquetas fora da imagem do produto */
+.home-product-card-v344 .info .highlight-inline-v497,
+.product-card .p-3 .highlight-inline-v497 {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  align-self: flex-start !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  width: auto !important;
+  max-width: 100% !important;
+  min-height: 0 !important;
+  margin: 0 0 7px !important;
+  padding: 5px 9px !important;
+  border: 1px solid #efc9d2 !important;
+  border-radius: 999px !important;
+  background: #fff5f7 !important;
+  color: #b43f5a !important;
+  box-shadow: none !important;
+  font-size: 10px !important;
+  line-height: 1.15 !important;
+  font-weight: 900 !important;
+  letter-spacing: .02em !important;
+  text-align: left !important;
+  white-space: normal !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  z-index: auto !important;
+}
+
+@media (max-width: 767.98px) {
+  .home-product-card-v344 .info .highlight-inline-v497,
+  .product-card .p-3 .highlight-inline-v497 {
+    font-size: 9px !important;
+    padding: 4px 7px !important;
+    margin-bottom: 6px !important;
+  }
+}

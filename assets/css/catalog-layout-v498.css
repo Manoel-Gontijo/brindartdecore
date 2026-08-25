@@ -1,0 +1,36 @@
+/* V4.9.8 - catálogo mais compacto e melhor aproveitamento do desktop */
+@media (min-width: 992px) {
+  .home-products-full-v498 {
+    width: 100% !important;
+    margin-top: 28px !important;
+  }
+
+  .product-detail-layout-v334 {
+    grid-template-columns: minmax(390px, .72fr) minmax(520px, 1.28fr) !important;
+    align-items: start !important;
+  }
+
+  .product-gallery-v334 {
+    align-self: start !important;
+    justify-content: flex-start !important;
+    padding: 18px !important;
+  }
+
+  .product-main-image-wrap-v334 {
+    min-height: 360px !important;
+    padding: 12px !important;
+  }
+
+  .product-main-image-wrap-v334 img,
+  .product-gallery-v334 img#produtoImagemPrincipalV334 {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 410px !important;
+    object-fit: contain !important;
+  }
+
+  .product-info-v334 {
+    padding: 28px 32px !important;
+    justify-content: flex-start !important;
+  }
+}

@@ -1,0 +1,107 @@
+
+/* BRINDART V4.9.3 — MOBILE FIX ISOLADO */
+@media screen and (max-width: 767.98px) {
+  html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important}
+
+  /* Remove faixa de benefícios no mobile */
+  body .bd-topbar{display:none!important;height:0!important;min-height:0!important;padding:0!important;margin:0!important;overflow:hidden!important}
+
+  /* Cabeçalho: logo em cima; busca abaixo ocupando toda largura */
+  body .bd-header{background:#fff!important}
+  body .bd-header .container{padding:10px 14px!important;min-height:0!important}
+  body .bd-header .row{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) 44px!important;
+    grid-template-areas:"logo cart" "search search"!important;
+    gap:8px 10px!important;
+    align-items:center!important;
+    margin:0!important;
+  }
+  body .bd-header .row>*{width:auto!important;max-width:none!important;margin:0!important;padding:0!important}
+  body .bd-header .row>:nth-child(1){grid-area:logo!important}
+  body .bd-header .row>:nth-child(2){grid-area:search!important;min-width:0!important}
+  body .bd-header .row>:nth-child(3){grid-area:cart!important;justify-self:end!important}
+  body .bd-header .logo-main{font-size:22px!important;line-height:1!important}
+  body .bd-header .logo-sub{font-size:9px!important;line-height:1.2!important;letter-spacing:1.5px!important;margin-top:4px!important}
+
+  /* Busca: categoria compacta + campo + botão */
+  body .bd-search{
+    display:grid!important;
+    grid-template-columns:92px minmax(0,1fr) 48px!important;
+    width:100%!important;height:46px!important;min-height:46px!important;
+    border:1px solid #ead8dc!important;border-radius:13px!important;
+    overflow:hidden!important;background:#fff!important;
+  }
+  body .bd-search select{
+    width:92px!important;min-width:92px!important;height:46px!important;
+    font-size:13px!important;padding:0 24px 0 9px!important;border:0!important;border-right:1px solid #ead8dc!important
+  }
+  body .bd-search input{
+    width:100%!important;min-width:0!important;height:46px!important;
+    font-size:14px!important;padding:0 10px!important;border:0!important
+  }
+  body .bd-search input::placeholder{font-size:13px!important}
+  body .bd-search .btn{
+    width:48px!important;min-width:48px!important;height:46px!important;
+    padding:0!important;border-radius:0!important
+  }
+
+  /* Galeria menor e centralizada */
+  body .product-gallery-v334{padding:12px!important}
+  body .product-main-image-wrap-v334{
+    width:100%!important;height:auto!important;min-height:0!important;
+    padding:8px!important;display:flex!important;justify-content:center!important;
+    align-items:center!important;overflow:hidden!important;background:#fff!important
+  }
+  body #produtoImagemPrincipalV334{
+    display:block!important;width:72vw!important;max-width:330px!important;
+    height:auto!important;max-height:none!important;object-fit:contain!important;
+    margin:0 auto!important
+  }
+  body .product-thumbs-v334{
+    display:flex!important;justify-content:center!important;gap:7px!important;
+    margin-top:8px!important;padding:0!important
+  }
+  body .product-thumbs-v334 img{
+    width:44px!important;height:44px!important;min-width:44px!important;
+    object-fit:contain!important
+  }
+
+  /* Informações */
+  body .product-info-v334{padding:18px 14px!important}
+  body .product-info-v334 h1{font-size:25px!important;line-height:1.15!important}
+  body .product-description-v334{font-size:16px!important;line-height:1.45!important}
+
+  /* Ações: UMA por linha. Nunca ultrapassam a tela. */
+  body .product-actions-v334{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+    width:100%!important;
+    margin-top:18px!important
+  }
+  body .product-actions-v334 .btn,
+  body .product-actions-v334 a.btn{
+    display:flex!important;align-items:center!important;justify-content:center!important;
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    min-height:50px!important;height:auto!important;
+    margin:0!important;padding:11px 14px!important;
+    box-sizing:border-box!important;white-space:normal!important;
+    font-size:15px!important;line-height:1.2!important
+  }
+  body .product-actions-v334 .btn:first-child{
+    min-height:54px!important;font-size:17px!important
+  }
+
+  /* Redes sociais sem estourar */
+  body .social-product-v37{display:flex!important;flex-wrap:wrap!important;gap:10px!important;align-items:center!important}
+
+  /* Breadcrumb */
+  body .breadcrumb{font-size:13px!important;white-space:normal!important}
+}
+
+@media screen and (max-width: 380px) {
+  body #produtoImagemPrincipalV334{width:68vw!important;max-width:270px!important}
+  body .bd-search{grid-template-columns:82px minmax(0,1fr) 44px!important}
+  body .bd-search select{width:82px!important;min-width:82px!important;font-size:12px!important}
+}

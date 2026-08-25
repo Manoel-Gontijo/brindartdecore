@@ -1,0 +1,112 @@
+/* V4.9.6 - cabecalho mobile definitivo */
+@media (max-width: 767.98px) {
+  body > .topbar,
+  body > .bd-topbar {
+    display: none !important;
+  }
+
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+
+  /* Pagina de detalhes: logo/carrinho e busca em linhas separadas */
+  .product-detail-header-v334 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .product-detail-header-v334 > .container {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 12px 14px !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    grid-template-areas:
+      "logo cart"
+      "search search" !important;
+    gap: 11px 12px !important;
+    align-items: center !important;
+  }
+
+  .product-detail-header-v334 > .container > a {
+    grid-area: logo !important;
+    min-width: 0 !important;
+    justify-self: start !important;
+  }
+
+  .product-detail-header-v334 .logo-main {
+    font-size: 22px !important;
+    line-height: 1 !important;
+  }
+
+  .product-detail-header-v334 .logo-sub {
+    margin-top: 3px !important;
+    font-size: 8px !important;
+    line-height: 1 !important;
+    letter-spacing: 1.3px !important;
+  }
+
+  .product-detail-header-v334 .header-icons {
+    grid-area: cart !important;
+    justify-self: end !important;
+    width: auto !important;
+    min-width: 0 !important;
+  }
+
+  .product-detail-header-v334 .cart-pill {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 3px !important;
+    border-radius: 50% !important;
+  }
+
+  .product-detail-header-v334 .search-main {
+    grid-area: search !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    margin: 0 !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 48px !important;
+    min-height: 48px !important;
+    overflow: hidden !important;
+    border-radius: 14px !important;
+  }
+
+  .product-detail-header-v334 .search-main select {
+    display: none !important;
+  }
+
+  .product-detail-header-v334 .search-main input {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 48px !important;
+    padding: 0 14px !important;
+    font-size: 14px !important;
+    border-radius: 14px 0 0 14px !important;
+  }
+
+  .product-detail-header-v334 .search-main .btn-search {
+    width: 48px !important;
+    min-width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    border-radius: 0 14px 14px 0 !important;
+  }
+
+  /* Home/listagens: mantem o arranjo aprovado, mas sem seletor apertado. */
+  .bd-header .bd-search {
+    grid-template-columns: minmax(0, 1fr) 48px !important;
+  }
+
+  .bd-header .bd-search select {
+    display: none !important;
+  }
+}

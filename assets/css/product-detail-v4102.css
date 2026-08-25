@@ -1,0 +1,36 @@
+/* V4.10.2 - proporção da página de detalhes no desktop */
+@media (min-width: 1200px) {
+  .product-detail-layout-v334 {
+    grid-template-columns: minmax(0, 1.38fr) minmax(470px, 1fr) !important;
+    align-items: start !important;
+  }
+
+  .product-gallery-v334 {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .product-main-image-wrap-v334 {
+    min-height: 470px !important;
+    padding: 14px !important;
+  }
+
+  .product-main-image-wrap-v334 img,
+  .product-gallery-v334 img#produtoImagemPrincipalV334 {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 540px !important;
+    object-fit: contain !important;
+  }
+
+  .product-info-v334 {
+    padding: 28px 30px !important;
+  }
+}
+
+/* Notebook: mantém equilíbrio sem apertar a calculadora. */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .product-detail-layout-v334 {
+    grid-template-columns: minmax(0, 1fr) minmax(430px, 1fr) !important;
+  }
+}

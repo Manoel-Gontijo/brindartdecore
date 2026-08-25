@@ -1,0 +1,20 @@
+
+@media(max-width:767.98px){
+ .bd-topbar{display:none!important;visibility:hidden!important;height:0!important;min-height:0!important;max-height:0!important;margin:0!important;padding:0!important;border:0!important;overflow:hidden!important;position:absolute!important;pointer-events:none!important}
+ html,body,.bd-header{margin-top:0!important;padding-top:0!important}
+ .bd-header .container{padding-top:10px!important}
+}
+@media(min-width:768px){
+ .product-card,.home-product-card-v344{position:relative!important}
+ .product-card .favorite-toggle-v45,.home-product-card-v344 .favorite-toggle-v45{top:8px!important;left:10px!important;right:auto!important;z-index:10!important}
+ .product-card .product-selo-v34,.product-card .product-selo-lista-v34,.product-card .discount-badge-v38,.product-card .highlight-plaque-v38,
+ .home-product-card-v344 .product-selo-v34,.home-product-card-v344 .discount-badge-v38,.home-product-card-v344 .highlight-plaque-v38{
+  position:absolute!important;left:auto!important;right:10px!important;top:8px!important;max-width:calc(100% - 62px)!important;
+  padding:5px 10px!important;border-radius:999px!important;font-size:.68rem!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;z-index:9!important
+ }
+ .product-card .discount-badge-v38,.home-product-card-v344 .discount-badge-v38{top:38px!important}
+ .product-card .highlight-plaque-v38,.home-product-card-v344 .highlight-plaque-v38{top:68px!important}
+ /* V4.10.5: selos ficam sobre a foto; não reserva uma faixa vazia acima dela. */
+ .product-card .product-img,.home-product-img-wrap-v34{margin-top:0!important}
+ .product-card .product-img img,.home-product-img-wrap-v34 img{object-fit:contain!important;object-position:center!important}
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900">
+<defs>
+<linearGradient id="g" x1="0" x2="1">
+<stop stop-color="#111"/>
+<stop offset="1" stop-color="#d9a441"/>
+</linearGradient>
+</defs>
+<rect width="900" height="900" fill="url(#g)"/>
+<circle cx="450" cy="280" r="180" fill="white" opacity=".18"/>
+<rect x="140" y="520" width="620" height="150" rx="40" fill="white" opacity=".85"/>
+<text x="450" y="600" text-anchor="middle" font-size="46" font-family="Arial" font-weight="700">Produto 35</text>
+<text x="450" y="645" text-anchor="middle" font-size="24" font-family="Arial">Brindart Decore</text>
+</svg>
